@@ -1,0 +1,114 @@
+/* Define CSS Variables for Colors */
+:root {
+    --dark-bg: #333; /* Match header background for consistency */
+    --light-text: #ecf0f1;
+    --accent-color: #00a87e; /* Match primary green from index.css */
+    --hover-scale: 1.2;
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+    padding: 15px 0; /* Slimmer footer */
+    font-size: 14px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between; /* Center all items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    width: 90%; /* Match container width from index.css */
+    max-width: 1200px; /* Match max-width from index.css */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 15px; /* Space between elements */
+}
+
+.footer-content p {
+    margin: 0; /* Remove default margin */
+    font-size: 14px;
+    display: inline; /* Keep inline with links */
+}
+
+.footer-content nav {
+    display: inline; /* Keep links inline */
+    margin: 0 10px; /* Small spacing */
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex; /* Display links inline */
+    gap: 15px;
+    vertical-align: middle; /* Align with text */
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: var(--light-text);
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links li a:hover,
+.footer-links li a:focus {
+    color: var(--accent-color);
+    outline: none;
+}
+
+/* Social Media Icons */
+.social-media {
+    margin: 0; /* Remove default margin */
+    display: inline-flex; /* Display icons inline */
+    gap: 15px;
+    align-items: center; /* Center vertically */
+}
+
+.social-media a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s, filter 0.3s;
+    filter: grayscale(100%);
+}
+
+.social-media a:hover img,
+.social-media a:focus img {
+    transform: scale(var(--hover-scale)); /* Slight zoom effect */
+    filter: grayscale(0);
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column; /* Stack elements vertically on mobile */
+        gap: 10px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .social-media {
+        justify-content: center;
+        gap: 10px;
+    }
+}

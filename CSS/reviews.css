@@ -1,0 +1,72 @@
+/* Reviews Section */
+.reviews ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.reviews li {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.reviews li strong {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.reviews li span {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.reviews li p {
+    margin: 10px 0 0;
+    color: #555;
+}
+
+/* Review Form */
+.submit-review form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.submit-review label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.submit-review textarea,
+.submit-review select,
+.submit-review input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.submit-review button.btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.submit-review button.btn:hover {
+    background-color: #45a049;
+}

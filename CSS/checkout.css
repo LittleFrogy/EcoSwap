@@ -1,0 +1,193 @@
+/* General Container Styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Order Summary Section */
+.order-summary {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.order-summary h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.order-summary ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-summary li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-summary img {
+    max-width: 120px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.order-summary div {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.order-summary p {
+    margin: 5px 0;
+}
+
+.order-summary .product-name {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.order-summary .product-details {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Billing Information Form */
+.billing-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.billing-info h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.billing-info label {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.billing-info input,
+.billing-info textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.billing-info input[type="email"],
+.billing-info input[type="text"],
+.billing-info textarea {
+    background-color: #f9f9f9;
+}
+
+.billing-info textarea {
+    min-height: 120px;
+}
+
+.billing-info input:focus,
+.billing-info textarea:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.billing-info button {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
+
+.billing-info button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Total Price Section */
+.cart-total {
+    text-align: right;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 15px 0;
+    background-color: #fff;
+    margin-top: 30px;
+    border-top: 2px solid #ddd;
+}
+
+.cart-total p {
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Error Message Styling */
+.error-message {
+    color: red;
+    font-size: 1.2em;
+    margin: 20px 0;
+    text-align: center;
+    padding: 10px;
+    background-color: #f8d7da;
+    border-radius: 5px;
+    border: 1px solid #f5c6cb;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .order-summary li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .order-summary img {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .order-summary div {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .billing-info label {
+        font-size: 1.1em;
+    }
+
+    .billing-info button {
+        width: auto;
+    }
+
+    .cart-total {
+        text-align: center;
+    }
+}

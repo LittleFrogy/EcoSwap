@@ -1,0 +1,172 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+    font-size: 2rem;
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.dashboard-header p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Company Actions Section */
+.company-actions {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.company-actions a {
+    text-decoration: none;
+    background: #0066cc;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 0 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.company-actions a:hover {
+    background: #004a99;
+    transform: scale(1.05);
+}
+
+/* Company Products Section */
+.company-products h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0066cc;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+table thead {
+    background: #0066cc;
+    color: #fff;
+}
+
+table thead th {
+    padding: 10px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody td {
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+table tbody tr:hover {
+    background: #f9f9f9;
+}
+
+/* Action Links in Table */
+table tbody td a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: color 0.2s ease;
+}
+
+table tbody td a:hover {
+    color: #004a99;
+    text-decoration: underline;
+}
+
+/* No Products Message */
+table tbody tr td[colspan='4'] {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .company-actions a {
+        font-size: 0.9rem;
+        margin: 5px 0;
+        padding: 8px 15px;
+    }
+
+    table thead th, table tbody td {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    /* Making table responsive */
+    table {
+        overflow-x: auto;
+        display: block;
+        width: 100%;
+    }
+
+    table tbody tr {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    table tbody td {
+        display: block;
+        width: 100%;
+        text-align: right;
+        padding: 8px;
+    }
+
+    table tbody td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-align: left;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    /* Adjusting "No Products" message for small screens */
+    table tbody tr td[colspan='4'] {
+        font-size: 1rem;
+    }
+}

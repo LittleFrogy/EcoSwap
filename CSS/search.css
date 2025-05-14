@@ -1,0 +1,80 @@
+/* General container for the search results */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Title of the search results section */
+.search-results h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* No products found message */
+.search-results p {
+    font-size: 1.2rem;
+    color: #888;
+    text-align: center;
+}
+
+/* List of search results */
+.search-results ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.search-results li {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect on individual product items */
+.search-results li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+/* Product name styling */
+.search-results h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+/* Product description styling */
+.search-results p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 0 10px;
+}
+
+/* Price styling */
+.search-results .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #27ae60;
+    margin: 10px 0;
+}
+
+/* View details button styling */
+.search-results a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect on the link/button */
+.search-results a:hover {
+    background-color: #2980b9;
+}

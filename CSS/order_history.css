@@ -1,0 +1,76 @@
+/* General Styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.order-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 25px; /* Increased margin for spacing */
+    transition: box-shadow 0.3s ease;
+}
+
+.order-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added hover effect for better interactivity */
+}
+
+.order-card p {
+    font-size: 1.2rem;
+    margin-bottom: 15px; /* Increased margin for better spacing between details */
+}
+
+.order-card a {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease; /* Added transition for smooth hover effect */
+}
+
+.order-card a:hover {
+    background-color: #45a049;
+}
+
+.order-card p strong {
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Reduced font size for small screens */
+    }
+
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .order-card {
+        padding: 15px;
+    }
+
+    .order-card p {
+        font-size: 1rem; /* Reduced font size for better readability on mobile */
+    }
+
+    .order-card a {
+        font-size: 0.9rem;
+        padding: 8px 15px; /* Reduced button size for mobile screens */
+    }
+}
